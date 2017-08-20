@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kształcenie słuchu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div id="container" class="container">
+            <button class="btn top" id="play">Losuj interwał</button>
+            <p class="btn">
+                <label>
+                    <input type="checkbox" id="wait" /><span>Graj dźwięki razem</span>
+                </label>
+            </p>
+
+            <input type="text" list="intervals" placeholder="Jaki to interwał?" id="ans" class="inter">
+
+            <datalist id="intervals">
+                <option value="pryma czysta" />
+                <option value="sekunda mała" />
+                <option value="sekunda wielka" />
+                <option value="tercja mała" />
+                <option value="tercja wielka" />
+                <option value="kwarta czysta" />
+                <option value="tryton" />
+                <option value="kwinta czysta" />
+                <option value="seksta mała" />
+                <option value="seksta wielka" />
+                <option value="septyma mała" />
+                <option value="septyma wielka" />
+                <option value="oktawa czysta" />
+            </datalist> 
+            <button class="btn" id="replay">Powtórz</button>
+            <button class="btn bottom" id="check">Sprawdź</button>
+            <p id="answer" class="hidden answer"></p>
+        </div>
+        <footer> created by Dariusz Gansty </footer>
+    </main>
+    <script src="js/v2.js"></script>
+</body>
+
+</html>
